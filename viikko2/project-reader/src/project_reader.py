@@ -2,7 +2,6 @@ from urllib import request
 import toml
 from project import Project
 
-
 class ProjectReader:
     def __init__(self, url):
         self._url = url
@@ -22,12 +21,12 @@ class ProjectReader:
             pass
         authors = parsed_content["tool"]["poetry"]["authors"]
         dependencies = []
-        for name, version in parsed_content["tool"]["poetry"]["dependencies"].items():
+        for name, _ in parsed_content["tool"]["poetry"]["dependencies"].items():
             dependencies.append(name)
         dev_dependencies = []
         # dev-dependencies on optional, joten se voi puuttua
         try:
-            for name, version in parsed_content["tool"]["poetry"]["group"]["dev"]["dependencies"].items():
+            for name, _ in parsed_content["tool"]["poetry"]["group"]["dev"]["dependencies"].items():
                 dev_dependencies.append(name)
         except KeyError:
             pass
