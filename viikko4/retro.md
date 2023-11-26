@@ -10,6 +10,7 @@ Tämän lyhytkestoisen tekniikan tarkoitus on, että tiimi käy keskustellen lä
 - Onko jotain, minkä tekemistä kannattaa jatkaa?
 - Onko jotain, mitä kannattaisi tehdä enemmän?
 - Onko jotain, mitä kannattaisi tehdä vähemmän?
+  
 Keskustelun visuaalisena apuna on monesti paperille piirretty, viiteen osaan jaettu ympyrä, johon on kirjoitettu sanat **"aloita"**, **"lopeta"**, **"jatka"**, **"enemmmän"**, **"vähemmän"**. Tälle paperille voidaan kirjata muistiin tiimin kommentit.
 Tekniikan kesto on 10-25 minuuttia kehitystiimin kokoa mukaillen.
 
