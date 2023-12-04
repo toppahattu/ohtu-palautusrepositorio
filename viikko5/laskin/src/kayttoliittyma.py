@@ -68,8 +68,12 @@ class Kayttoliittyma:
         else:
             self._edelliset_komennot.append(komento_olio)
             komento_olio.suorita()
-                       
-        self._kumoa_painike["state"] = constants.NORMAL
+
+        if len(self._edelliset_komennot) == 0:
+            self._sovelluslogiikka.aseta_arvo(0)
+            self._kumoa_painike["state"] = constants.DISABLED
+        else:                       
+            self._kumoa_painike["state"] = constants.NORMAL
 
         if self._sovelluslogiikka.arvo() == 0:
             self._nollaus_painike["state"] = constants.DISABLED
