@@ -2,6 +2,7 @@ class Summa:
     def __init__(self, sovelluslogiikka, io):
         self._sovelluslogiikka = sovelluslogiikka
         self._io = io
+        self._edellinen_arvo = 0
         
     def suorita(self):
         syote = int(self._io())
@@ -15,6 +16,7 @@ class Erotus:
     def __init__(self, sovelluslogiikka, io):
         self._sovelluslogiikka = sovelluslogiikka
         self._io = io
+        self._edellinen_arvo = 0
         
     def suorita(self):        
         syote = int(self._io())
@@ -27,7 +29,7 @@ class Erotus:
 class Nollaus:
     def __init__(self, sovelluslogiikka):
         self._sovelluslogiikka = sovelluslogiikka
-        
+        self._edellinen_arvo = 0        
         
     def suorita(self):
         self._edellinen_arvo = self._sovelluslogiikka.arvo()
